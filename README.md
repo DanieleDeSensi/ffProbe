@@ -48,7 +48,8 @@ Parameters
 
 ```-x <cnt>```: Cnt is the maximum number of packets to process before returning from reading, but is not a minimum number. If less than cnt packets are present, only those packets will be processed. If no packets are presents, read returns immediately. A  value of -1 means "process packets until there is at least one packet on the buffer". This can be dangerous because if the packets rate is very high the program will always find packets in the buffer and so can fill the memory. A value of -1 when reading a live capture causes all the packets in the file to be processed [default 10000].
 
--f <outputFile>]              | Print the flows in textual format on a file\n");
+```-f <outputFile>```: Print the flows in textual format on a file.
+
 ```-z <flowsPerTaskCheck>```: Number of flows to check for expiration after the arrival of a task to a worker. (-1 is all) [default 200].
 
 ```-c <collector>``` or ```--collector <collector>```: Host of the Netflow collector [default 127.0.0.1].
