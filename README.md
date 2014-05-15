@@ -36,6 +36,8 @@ After that, install it with
 $ make install
 ```
 
+IMPORTANT: You may need sudoers rights to read packets from network interface.
+
 Reading from multiple interfaces
 -------
 If you need to read from multiple interfaces at the same time (or from multiple [PF_RING DNA queues](http://www.ntop.org/products/pf_ring/dna/)), you can do it in two different ways:
