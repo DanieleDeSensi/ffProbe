@@ -1,9 +1,10 @@
 Introduction
 =======
 
-ffProbe is a new pipelined parallel implementation of a NetFlow probe built
-on top of FastFlow, a parallel programming framework for multicore platforms based
-on non-blocking lock-free/fence-free synchronization mechanisms.
+ffProbe is a new pipelined parallel implementation of a [NetFlow](http://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html) probe built
+on top of [FastFlow](http://calvados.di.unipi.it/), a parallel programming framework for multicore platforms based
+on non-blocking lock-free/fence-free synchronization mechanisms. ffProbe uses [PF_RING](http://www.ntop.org/products/pf_ring/) for efficient low-latency packets capture.
+
 Thanks to an efficient design, ffProbe is able to scale with the number of cores used
 and to process up to 10 Million Packets per Second using a commodity 8-cores processor.
 
@@ -16,7 +17,24 @@ To let ffProbe work, [PF_RING](http://www.ntop.org/products/pf_ring/) needs to b
 
 Usage
 =======
+Fetch ffProbe by typing:
 
+```
+$ git clone git://github.com/DanieleDeSensi/ffProbe.git
+$ cd ffProbe
+```
+
+Compile it with:
+
+```
+$ make
+```
+
+After that, install it with
+
+```
+$ make install
+```
 
 Reading from multiple interfaces
 -------
