@@ -23,7 +23,7 @@ Reading from multiple interfaces
 If you need to read from multiple interfaces at the same time (or from multiple [PF_RING DNA queues](http://www.ntop.org/products/pf_ring/dna/)), you can do it in two different ways:
 
 * Use a separate ffProbe instance for each interface. 
-* Use a single ffProbe instance in multireader mode. If you want to use this mode you have to recompile ffProbe with -DMULTIPLE_READERS. In this case, when you run ffProbe, you need to specify all the interfaces with ```-i``` parameter by separating them by an underscore (e.g. -i eth1_eth2_..._ethn) and to specify the number of interfaces with ```-r n```.
+* Use a single ffProbe instance in multireader mode. If you want to use this mode you have to recompile ffProbe with -DMULTIPLE_READERS. In this case, when you run ffProbe, you need to specify all the interfaces with ```-i``` parameter by separating them by an underscore (e.g. ```-i eth1_eth2_..._ethn```) and to specify the number of interfaces with ```-r n```.
  
 According to the results presented in the [paper](), is highly suggested to use a separate ffProbe instance for each interface instead of using the multi-reader mode.
 
@@ -31,7 +31,7 @@ According to the results presented in the [paper](), is highly suggested to use 
 Parameters
 =======
 * ```-i <captureInterface>```: Interface name from which packets are captured. This is the only mandatory parameter.
-* 
+
 * ```--sequential```: Executes the probe sequentially.
 
 * ```-d <idleTimeout>```: It specifies the maximum (seconds) flow idle lifetime [default 30].
