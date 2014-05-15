@@ -32,10 +32,10 @@
 #endif
 
 #define BUFFER_SIZE 32
-#include "Task.hpp"
-#include "Flow.hpp"
-#include "Workers.hpp"
-#include "Utils.hpp"
+#include "task.hpp"
+#include "flow.hpp"
+#include "workers.hpp"
+#include "utils.hpp"
 #include <stdlib.h>
 #include <errno.h>
 #include <unistd.h>
