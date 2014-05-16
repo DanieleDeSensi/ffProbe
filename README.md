@@ -9,11 +9,11 @@ Thanks to an efficient design, ffProbe is able to scale with the number of cores
 and to process up to 10 Million Packets per Second using a commodity 8-cores processor.
 
 For more information about ffProbe implementation, result and comparison with other open
-source solutions, please check the paper "Network Monitoring on Multicores with Algorithmic Skeletons".
+source solutions, please check the paper ["Network Monitoring on Multicores with Algorithmic Skeletons"](Paper_Parco_2011.pdf).
 
 Dependencies
 =======
-To let ffProbe work, [PF_RING](http://www.ntop.org/products/pf_ring/) needs to be installed on the machine.
+To let ffProbe work, [PF_RING](http://www.ntop.org/products/pf_ring/) and [libpcap](http://www.tcpdump.org/) need to be installed on the machine.
 
 Usage
 =======
@@ -36,6 +36,11 @@ After that, install it with
 $ make install
 ```
 
+Run ffProbe with:
+```
+$ sudo ffProbe -i eth0
+```
+
 IMPORTANT: You may need sudoers rights to read packets from network interface.
 
 Reading from multiple interfaces
@@ -45,7 +50,7 @@ If you need to read from multiple interfaces at the same time (or from multiple 
 * Use a separate ffProbe instance for each interface. 
 * Use a single ffProbe instance in multireader mode. If you want to use this mode you have to recompile ffProbe with -DMULTIPLE_READERS. In this case, when you run ffProbe, you need to specify all the interfaces with ```-i``` parameter by separating them by an underscore (e.g. ```-i eth1_eth2_..._ethn```) and to specify the number of interfaces with ```-r n```.
  
-According to the results presented in the [paper](), is highly suggested to use a separate ffProbe instance for each interface instead of using the multi-reader mode.
+According to the results presented in the [paper](Paper_Parco_2011.pdf), is highly suggested to use a separate ffProbe instance for each interface instead of using the multi-reader mode.
 
 
 Parameters
