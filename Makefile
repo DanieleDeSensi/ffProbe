@@ -3,7 +3,7 @@ CXX                 = g++
 LINK_OPT            = 
 VERSION             = 
 OPTIMIZE_FLAGS      = -finline-functions -O3 
-CXXFLAGS            = -Wall -g -DFF_BOUNDED_BUFFER
+CXXFLAGS            = --std=c++11 -Wall -DFF_BOUNDED_BUFFER
 CFLAGS              =
 LDFLAGS             = -Xlinker -zmuldefs
 INCS                = -I ./ -I ./fastflow

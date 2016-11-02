@@ -13,7 +13,7 @@ source solutions, please check the paper ["Network Monitoring on Multicores with
 
 Dependencies
 =======
-To let ffProbe work, [FastFlow](http://calvados.di.unipi.it/), [PF_RING](http://www.ntop.org/products/pf_ring/) and [libpcap](http://www.tcpdump.org/) need to be installed on the machine.
+To let ffProbe work, [PF_RING](http://www.ntop.org/products/pf_ring/) and [libpcap](http://www.tcpdump.org/) need to be installed on the machine.
 
 Usage
 =======
