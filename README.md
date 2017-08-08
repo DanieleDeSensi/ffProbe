@@ -12,7 +12,7 @@ For more information about ffProbe implementation, result and comparison with ot
 source solutions, please check the paper ["Network Monitoring on Multicores with Algorithmic Skeletons"](Paper_Parco_2011.pdf).
 
 ------
-**If you use Peafowl for scientific purposes, please cite our paper:**
+**If you use ffProbe for scientific purposes, please cite our paper:**
 *Network Monitoring on Multicores with Algorithmic Skeletons*
 M. Danelutto, L. Deri, D. De Sensi
 ------
