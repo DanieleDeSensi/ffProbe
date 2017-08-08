@@ -11,6 +11,12 @@ and to process up to 10 Million Packets per Second using a commodity 8-cores pro
 For more information about ffProbe implementation, result and comparison with other open
 source solutions, please check the paper ["Network Monitoring on Multicores with Algorithmic Skeletons"](Paper_Parco_2011.pdf).
 
+------
+**If you use Peafowl for scientific purposes, please cite our paper:**
+*Network Monitoring on Multicores with Algorithmic Skeletons*
+M. Danelutto, L. Deri, D. De Sensi
+------
+
 Dependencies
 =======
 To let ffProbe work, [PF_RING](http://www.ntop.org/products/pf_ring/) and [libpcap](http://www.tcpdump.org/) need to be installed on the machine.
